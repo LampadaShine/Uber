@@ -1,0 +1,387 @@
+.nav
+  position: fixed
+  width: 100%
+  height: 54px
+  padding: 10px 0
+  z-index: 1
+  background-color: #212121
+  .menu
+    display: flex
+    justify-content: space-between
+    padding: 5.5px 0
+    margin: 0
+    &-logo
+      display: none
+    &_item
+      list-style-type: none
+      border-right: 1px dotted #000
+      &:last-child
+        border-right: none
+    &-link
+      color: #fff
+      font-size: 15px
+      text-decoration: none
+      text-align: center
+      padding-right: 56px
+      display: block
+  .menu_btn
+    display: none    
+.subheader
+  background-color: rgba(0, 0, 0, 0.6)
+  padding: 16px 0 16px 0
+  position: absolute
+  top: 54px
+  width: 100%
+  z-index: 0
+  .logo
+    display: block
+    text-decoration: none
+    &-text
+      color: #fff
+      opacity: 0.5
+      font-size: 13px
+      font-weight: 100
+      margin-bottom: 0
+  .call-us
+    color: #fff
+    font-size: 12px
+    font-weight: 300
+    line-height: 12px
+    padding-top: 7px
+    margin-bottom: 0
+    text-align: right
+  .phone
+    display: block
+    color: #fff
+    font-size: 22px
+    font-weight: 400
+    text-align: right
+    text-decoration: none
+    margin-bottom: 0
+  .phone-xs
+    display: none
+  .btn
+    @include btn
+    padding: 12px 19px
+    margin-top: 4px
+    &:hover
+      background-image: none
+      background-color: $background         
+.promo
+  padding: 207px 0 135px 0
+  background: url(../images/main_bg.jpg) center (center / cover) no-repeat
+  &-heading
+    color: #fff
+    font-size: 60px
+    font-weight: 900
+    line-height: 1
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 19px
+  &-subheading
+    color: #fff
+    font-size: 36px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 29px
+  &-text
+    color: #fff
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    margin-bottom: 120px
+  &-btn
+    @include btn
+    padding: 20px 35px
+    margin: 0 auto
+    &:focus
+      outline: none
+    &:hover
+      background-image: none
+      background-color: $background
+.counts
+  padding: 70px 0 65px 0
+  .label
+    @include label
+    margin-bottom: 36px
+  .title
+    @include title
+    margin-bottom: 25px
+  .count
+    display: flex
+    justify-content: center
+    &_img-box
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 113px
+      height: 113px
+      background-color: $background
+      border-radius: 100px
+    &_img
+        display: block
+    &-text-wrapper
+      width: 350px
+      padding-left: 20px
+    &-heading
+      color: $text
+      font-size: 17px
+      font-weight: 400
+      line-height: 21px         
+      span
+          text-transform: uppercase
+      .count-text
+        color: #202020
+        font-size: 15px
+        font-weight: 300
+        line-height: 21px
+.opportunities
+  padding: 48px 0 130px 0
+  background: url(../images/second_bg.jpg) center center/cover no-repeat
+  .label
+    @include label
+    margin-bottom: 36px
+  .title
+    @include title
+    margin-bottom: 19px
+  .subtitle
+    @include subtitle
+    margin-bottom: 36px
+  .card1
+    background: url(../images/card1.png) center center/cover no-repeat
+  .card2
+    background: url(../images/card2.png) center center/cover no-repeat
+  .card3
+    background: url(../images/card3.png) center center/cover no-repeat
+  .card4
+    background: url(../images/card4.png) center center/cover no-repeat
+  .card5
+    background: url(../images/card5.png) center center/cover no-repeat
+  .card6
+    background: url(../images/card6.png) center center/cover no-repeat
+  .card
+    width: 320px
+    min-height: 280px
+    padding-top: 90px
+    margin: 0 auto
+    margin-bottom: 19px
+    &-text
+      color: #fff
+      font-size: 24px
+      font-weight: 400
+      line-height: 31px
+      text-transform: uppercase
+      text-align: center
+      min-height: 55px
+      margin-bottom: 80px
+      padding: 0
+    .expand-block
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: #000
+      width: 26px
+      height: 26px
+      border-radius: 100px
+      margin: 0 auto
+      margin-bottom: 35px
+      cursor: pointer
+      &:before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $text
+        transform: translateX(6%)
+      &:after
+        content: ''
+        display: block
+        width: 2px
+        height: 14px
+        background-color: $text
+        transform: translateX(-350%)
+  .choice
+    height: 500px
+    background-color: #000
+    padding-top: 56px
+    margin-top: 61px
+    margin-bottom: 218px
+    .label
+      @include label
+      background-color: #fff
+      color: #000
+      margin-bottom: 30px
+    .title
+      @include title
+      color: #fff
+      margin-bottom: 5px
+    .subtitle
+      @include subtitle
+      color: #fff
+    .car
+      display: block
+      margin: 0 auto
+    .down-subtitle-xs
+      display: none
+  .down-subtitle
+    @include subtitle
+    font-weight: 300
+    line-height: 24px
+.conditions
+  padding: 68px 0 85px 0
+  .label
+    @include label
+    margin-bottom: 36px
+  .title
+    @include title
+    margin-bottom: 19px
+  .condition
+    padding-left: 8px
+    &-heading-blue
+      color: $text
+      font-size: 22px
+      font-weight: 400
+      margin-bottom: 20px
+    &-heading-red
+      color: #ff5656
+      font-size: 22px
+      font-weight: 400
+      text-transform: uppercase
+      margin-bottom: 20px
+    &-text-wrapper
+      width: 490px
+      &-inner
+        display: flex
+        margin-left: 20px
+        .mark
+          display: block
+          width: 20px
+          height: 20px
+        .condition-text
+          color: #000
+          font-size: 17px
+          font-weight: 300
+          line-height: 24px
+          margin-left: 11px
+          margin-bottom: 15px
+      .condition-text-blue
+        color: $text
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        margin-left: 11px  
+        margin-bottom: 63px
+.cities
+  padding: 49px 0 52px 0
+  background: url(../images/world_bg.jpg) center center/cover no-repeat
+  .label
+    @include label
+    color: #000
+    background-color: #fff
+    margin-bottom: 30px
+  .title
+    @include title
+    color: #fff
+    margin-bottom: 10px
+  .subtitle
+    @include subtitle
+    color: #fff
+    margin-bottom: 535px
+  .check-cities
+    color: $text
+    font-size: 15px
+    font-weight: 400
+    text-align: center
+    text-transform: uppercase
+    cursor: pointer
+    transition: 0.5s font-size, 0.8s color
+    &:hover
+      color: #3f82ca
+      font-size: 15.7px
+.footer
+  padding-top: 14px 
+  &-line
+    content: ''
+    display: block
+    width: 300px
+    height: 4px
+    background-color: $background
+    margin: 0 auto
+    margin-bottom: 32px
+  &-inner
+    display: flex
+    justify-content: space-between
+    padding: 0 23px
+    margin-bottom: 31px
+    .social-networks
+      display: flex
+      justify-content: flex-start
+      align-items: flex-start
+      width: 33%
+      .icon
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
+        background-color: #000
+        width: 32px
+        height: 32px
+        border-radius: 100px
+        margin-right: 9px
+        cursor: pointer
+        i
+          color: #fff
+          line-height: 14px
+    .footer-menu
+      width: 33%
+      .main-menu 
+        padding-left: 30px
+        text-align: center
+        margin-bottom: 15px
+        &-link
+          color: #000
+          font-size: 15px
+          font-weight: 300
+          text-transform: uppercase
+          text-decoration: none
+          margin-right: 46px
+          &:last-child
+            margin-right: 0
+      .submenu
+        text-align: center
+        margin-bottom: 22px
+        &-link
+          color: #999
+          font-size: 11px
+          font-weight: 300
+          text-transform: uppercase
+          text-decoration: none
+          margin-right: 21px
+          &:last-child
+            margin-right: 0
+      .language
+        color: $text
+        font-size: 11px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: center
+        cursor: default
+    .download
+      display: flex
+      justify-content: flex-end
+      align-items: flex-start
+      width: 33%
+      &-link
+        cursor: pointer
+  &-underline
+    color: rgba(256, 256, 256, 0.6)
+    font-size: 8px
+    font-weight: 100
+    text-transform: uppercase
+    text-align: center
+    background-color: #000
+    width: 100%
+    height: 14px
+    

@@ -1,0 +1,1330 @@
+@charset "UTF-8";
+/* line 3, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+/* line 1, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 54px;
+  padding: 10px 0;
+  z-index: 1;
+  background-color: #212121;
+}
+
+/* line 8, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.nav .menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 5.5px 0;
+  margin: 0;
+}
+
+/* line 13, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.nav .menu-logo {
+  display: none;
+}
+
+/* line 15, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.nav .menu_item {
+  list-style-type: none;
+  border-right: 1px dotted #000;
+}
+
+/* line 18, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.nav .menu_item:last-child {
+  border-right: none;
+}
+
+/* line 20, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.nav .menu-link {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  padding-right: 56px;
+  display: block;
+}
+
+/* line 27, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.nav .menu_btn {
+  display: none;
+}
+
+/* line 29, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.subheader {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px 0 16px 0;
+  position: absolute;
+  top: 54px;
+  width: 100%;
+  z-index: 0;
+}
+
+/* line 36, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.subheader .logo {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 39, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.subheader .logo-text {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 13px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+/* line 45, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.subheader .call-us {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  padding-top: 7px;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+/* line 53, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.subheader .phone {
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: right;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+/* line 61, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.subheader .phone-xs {
+  display: none;
+}
+
+/* line 63, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.subheader .btn {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+  background-color: #44d9f5;
+  background-image: linear-gradient(to top, #4be2fe 0%, #22b1cc 100%);
+  outline: none;
+  transition: 0.8s background-color;
+  padding: 12px 19px;
+  margin-top: 4px;
+}
+
+/* line 67, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.subheader .btn:hover {
+  background-image: none;
+  background-color: #409db4;
+}
+
+/* line 70, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.promo {
+  padding: 207px 0 135px 0;
+  background: url(../images/main_bg.jpg) center center/cover no-repeat;
+}
+
+/* line 73, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.promo-heading {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+/* line 81, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.promo-subheading {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+/* line 88, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.promo-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+/* line 95, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.promo-btn {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+  background-color: #44d9f5;
+  background-image: linear-gradient(to top, #4be2fe 0%, #22b1cc 100%);
+  outline: none;
+  transition: 0.8s background-color;
+  padding: 20px 35px;
+  margin: 0 auto;
+}
+
+/* line 99, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.promo-btn:focus {
+  outline: none;
+}
+
+/* line 101, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.promo-btn:hover {
+  background-image: none;
+  background-color: #409db4;
+}
+
+/* line 104, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.counts {
+  padding: 70px 0 65px 0;
+}
+
+/* line 106, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.counts .label {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  width: 112px;
+  padding: 8px 12px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+/* line 109, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.counts .title {
+  color: #000;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* line 112, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.counts .count {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 115, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.counts .count_img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 113px;
+  height: 113px;
+  background-color: #409db4;
+  border-radius: 100px;
+}
+
+/* line 123, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.counts .count_img {
+  display: block;
+}
+
+/* line 125, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.counts .count-text-wrapper {
+  width: 350px;
+  padding-left: 20px;
+}
+
+/* line 128, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.counts .count-heading {
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* line 133, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.counts .count-heading span {
+  text-transform: uppercase;
+}
+
+/* line 135, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.counts .count-heading .count-text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 140, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities {
+  padding: 48px 0 130px 0;
+  background: url(../images/second_bg.jpg) center center/cover no-repeat;
+}
+
+/* line 143, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .label {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  width: 112px;
+  padding: 8px 12px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+/* line 146, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .title {
+  color: #000;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+/* line 149, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .subtitle {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+/* line 152, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card1 {
+  background: url(../images/card1.png) center center/cover no-repeat;
+}
+
+/* line 154, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card2 {
+  background: url(../images/card2.png) center center/cover no-repeat;
+}
+
+/* line 156, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card3 {
+  background: url(../images/card3.png) center center/cover no-repeat;
+}
+
+/* line 158, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card4 {
+  background: url(../images/card4.png) center center/cover no-repeat;
+}
+
+/* line 160, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card5 {
+  background: url(../images/card5.png) center center/cover no-repeat;
+}
+
+/* line 162, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card6 {
+  background: url(../images/card6.png) center center/cover no-repeat;
+}
+
+/* line 164, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card {
+  width: 320px;
+  min-height: 280px;
+  padding-top: 90px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+}
+
+/* line 170, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-align: center;
+  min-height: 55px;
+  margin-bottom: 80px;
+  padding: 0;
+}
+
+/* line 180, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card .expand-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+/* line 191, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card .expand-block:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  transform: translateX(6%);
+}
+
+/* line 198, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .card .expand-block:after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #1eacc7;
+  transform: translateX(-350%);
+}
+
+/* line 205, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .choice {
+  height: 500px;
+  background-color: #000;
+  padding-top: 56px;
+  margin-top: 61px;
+  margin-bottom: 218px;
+}
+
+/* line 211, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .choice .label {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  width: 112px;
+  padding: 8px 12px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+/* line 216, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .choice .title {
+  color: #000;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* line 220, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .choice .subtitle {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 223, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .choice .car {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 226, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .choice .down-subtitle-xs {
+  display: none;
+}
+
+/* line 228, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.opportunities .down-subtitle {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 232, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions {
+  padding: 68px 0 85px 0;
+}
+
+/* line 234, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions .label {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  width: 112px;
+  padding: 8px 12px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+/* line 237, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions .title {
+  color: #000;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+/* line 240, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions .condition {
+  padding-left: 8px;
+}
+
+/* line 242, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions .condition-heading-blue {
+  color: #1eacc7;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* line 247, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions .condition-heading-red {
+  color: #ff5656;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* line 253, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions .condition-text-wrapper {
+  width: 490px;
+}
+
+/* line 255, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions .condition-text-wrapper-inner {
+  display: flex;
+  margin-left: 20px;
+}
+
+/* line 258, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions .condition-text-wrapper-inner .mark {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 262, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions .condition-text-wrapper-inner .condition-text {
+  color: #000;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-left: 11px;
+  margin-bottom: 15px;
+}
+
+/* line 269, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.conditions .condition-text-wrapper .condition-text-blue {
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-left: 11px;
+  margin-bottom: 63px;
+}
+
+/* line 276, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.cities {
+  padding: 49px 0 52px 0;
+  background: url(../images/world_bg.jpg) center center/cover no-repeat;
+}
+
+/* line 279, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.cities .label {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  width: 112px;
+  padding: 8px 12px;
+  margin: 0 auto;
+  color: #000;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+/* line 284, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.cities .title {
+  color: #000;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* line 288, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.cities .subtitle {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 535px;
+}
+
+/* line 292, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.cities .check-cities {
+  color: #1eacc7;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s font-size, 0.8s color;
+}
+
+/* line 300, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.cities .check-cities:hover {
+  color: #3f82ca;
+  font-size: 15.7px;
+}
+
+/* line 303, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer {
+  padding-top: 14px;
+}
+
+/* line 305, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-line {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 4px;
+  background-color: #409db4;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+/* line 313, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 23px;
+  margin-bottom: 31px;
+}
+
+/* line 318, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .social-networks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 33%;
+}
+
+/* line 323, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .social-networks .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #000;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  margin-right: 9px;
+  cursor: pointer;
+}
+
+/* line 334, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .social-networks .icon i {
+  color: #fff;
+  line-height: 14px;
+}
+
+/* line 337, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .footer-menu {
+  width: 33%;
+}
+
+/* line 339, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .footer-menu .main-menu {
+  padding-left: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* line 343, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .footer-menu .main-menu-link {
+  color: #000;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 46px;
+}
+
+/* line 350, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .footer-menu .main-menu-link:last-child {
+  margin-right: 0;
+}
+
+/* line 352, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .footer-menu .submenu {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+/* line 355, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .footer-menu .submenu-link {
+  color: #999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 21px;
+}
+
+/* line 362, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .footer-menu .submenu-link:last-child {
+  margin-right: 0;
+}
+
+/* line 364, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .footer-menu .language {
+  color: #1eacc7;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: default;
+}
+
+/* line 371, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .download {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 33%;
+}
+
+/* line 376, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-inner .download-link {
+  cursor: pointer;
+}
+
+/* line 378, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_general.sass */
+.footer-underline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 8px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #000;
+  width: 100%;
+  height: 14px;
+}
+
+@media (max-width: 1399.5px) {
+  /* line 4, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu-link {
+    padding-right: 44px;
+  }
+  /* line 7, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .btn {
+    font-size: 13px;
+  }
+  /* line 9, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo {
+    padding: 207px 0 120px 0;
+  }
+  /* line 11, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-heading {
+    font-size: 55px;
+  }
+  /* line 13, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-subheading {
+    font-size: 32px;
+  }
+  /* line 15, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-text {
+    margin-bottom: 90px;
+  }
+  /* line 19, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu .main-menu {
+    padding-left: 0;
+  }
+  /* line 21, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu .main-menu-link {
+    font-size: 13px;
+  }
+  /* line 24, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu .submenu-link {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1199.5px) {
+  /* line 29, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu-link {
+    padding-right: 30px;
+    font-size: 14px;
+  }
+  /* line 34, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .logo-image {
+    width: 70%;
+  }
+  /* line 36, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .logo-text {
+    font-size: 11px;
+  }
+  /* line 38, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .phone {
+    font-size: 18px;
+  }
+  /* line 40, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .btn {
+    font-size: 10px;
+  }
+  /* line 42, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo {
+    padding: 207px 0 100px 0;
+  }
+  /* line 44, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-heading {
+    font-size: 55px;
+  }
+  /* line 46, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-subheading {
+    font-size: 26px;
+  }
+  /* line 48, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-text {
+    font-size: 15px;
+    margin-bottom: 75px;
+  }
+  /* line 51, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .count {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 54, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .count-text-wrapper {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  /* line 57, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .choice {
+    margin-top: 0;
+  }
+  /* line 61, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-heading-blue {
+    width: 440px;
+  }
+  /* line 63, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-heading-red {
+    width: 440px;
+  }
+  /* line 65, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-text-wrapper {
+    width: 440px;
+  }
+  /* line 67, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-text-blue {
+    width: 440px;
+  }
+  /* line 71, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu .main-menu {
+    padding-left: 0;
+  }
+  /* line 73, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu .main-menu-link {
+    font-size: 11px;
+  }
+  /* line 76, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu .submenu-link {
+    font-size: 9px;
+    margin-right: 9px;
+  }
+  /* line 81, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .download-link img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.5px) {
+  /* line 86, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu-link {
+    font-size: 11px;
+    padding-right: 18px;
+  }
+  /* line 90, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .logo {
+    padding-top: 2px;
+  }
+  /* line 92, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .logo-text {
+    font-size: 9px;
+  }
+  /* line 94, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .call-us {
+    font-size: 10px;
+  }
+  /* line 96, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .phone {
+    font-size: 16px;
+  }
+  /* line 98, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo {
+    padding: 207px 0 70px 0;
+  }
+  /* line 100, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-heading {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  /* line 103, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-subheading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 106, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-text {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  /* line 110, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-lg-text {
+    display: none;
+  }
+  /* line 112, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-btn {
+    font-size: 12px;
+    padding: 15px 25px;
+  }
+  /* line 115, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .counts {
+    padding: 40px 0;
+  }
+  /* line 117, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .counts .title {
+    font-size: 27px;
+  }
+  /* line 120, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .counts .count_img-box {
+    width: 90px;
+    height: 90px;
+  }
+  /* line 123, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .counts .count_img {
+    width: 60%;
+    height: 60%;
+  }
+  /* line 126, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .counts .count-text-wrapper {
+    width: 310px;
+  }
+  /* line 128, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .counts .count-heading {
+    font-size: 15px;
+  }
+  /* line 130, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .counts .count-text {
+    font-size: 12px;
+  }
+  /* line 133, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities .title {
+    font-size: 27px;
+  }
+  /* line 135, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities .subtitle {
+    font-size: 14px;
+  }
+  /* line 138, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities .choice .title {
+    font-size: 27px;
+  }
+  /* line 140, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities .choice .car {
+    width: 100%;
+  }
+  /* line 143, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition {
+    width: 100%;
+  }
+  /* line 145, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-heading-blue {
+    width: 100%;
+  }
+  /* line 147, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-heading-red {
+    width: 100%;
+  }
+  /* line 149, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-text-wrapper {
+    width: 100%;
+  }
+  /* line 151, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-text-blue {
+    width: 100%;
+  }
+  /* line 154, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .cities .subtitle {
+    margin-bottom: 320px;
+  }
+  /* line 157, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .social-networks {
+    width: 25%;
+  }
+  /* line 159, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu {
+    width: 50%;
+    padding-left: 0;
+  }
+  /* line 162, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .download {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 166, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 40vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 0 0 20px;
+    transition: 0.4s all;
+  }
+  /* line 177, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu_active {
+    left: 0%;
+  }
+  /* line 179, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu-logo {
+    display: block;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  /* line 183, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu_item {
+    margin-bottom: 25px;
+  }
+  /* line 185, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu-link {
+    font-size: 15px;
+  }
+  /* line 187, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu_btn {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+  }
+  /* line 194, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu_btn-unit {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 3px;
+    transition: 0.3s all;
+  }
+  /* line 202, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu_btn_active .menu_btn-unit {
+    margin-bottom: -2px;
+  }
+  /* line 204, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu_btn_active .menu_btn-unit:first-child {
+    transform: rotate(-45deg);
+  }
+  /* line 206, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu_btn_active .menu_btn-unit:nth-child(2) {
+    display: none;
+  }
+  /* line 208, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu_btn_active .menu_btn-unit:last-child {
+    transform: rotate(45deg);
+  }
+  /* line 211, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .logo {
+    margin: 20px 0;
+  }
+  /* line 213, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .logo-image {
+    width: 100%;
+  }
+  /* line 215, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .logo-text {
+    display: none;
+  }
+  /* line 217, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .xs-none {
+    display: none;
+  }
+  /* line 219, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .phone-xs {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  /* line 225, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .btn {
+    width: 100%;
+    padding: 8px 19px;
+    margin: 0 auto;
+  }
+  /* line 229, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .btn:hover {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+    background-color: #44d9f5;
+    background-image: linear-gradient(to top, #4be2fe 0%, #22b1cc 100%);
+    outline: none;
+    transition: 0.8s background-color;
+    font-size: 10px;
+  }
+  /* line 232, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo {
+    padding: 207px 0 40px 0;
+  }
+  /* line 234, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-heading {
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  /* line 238, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-subheading {
+    font-size: 25px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  /* line 243, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-text {
+    display: none;
+  }
+  /* line 246, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-btn:hover {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
+    background-color: #44d9f5;
+    background-image: linear-gradient(to top, #4be2fe 0%, #22b1cc 100%);
+    outline: none;
+    transition: 0.8s background-color;
+    font-size: 12px;
+    padding: 15px 25px;
+  }
+  /* line 250, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities {
+    padding: 48px 0 0 0;
+  }
+  /* line 252, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities .cars-every-day {
+    display: none;
+  }
+  /* line 254, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities .choice {
+    height: 681px;
+    margin-bottom: 0;
+  }
+  /* line 257, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities .choice .down-subtitle-xs {
+    display: block;
+    color: #fff;
+    text-align: center;
+  }
+  /* line 262, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .cities .subtitle {
+    margin-bottom: 250px;
+  }
+  /* line 264, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 267, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu {
+    order: -1;
+    width: 100%;
+  }
+  /* line 271, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu .main-menu-link {
+    font-size: 10px;
+  }
+  /* line 274, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu .submenu-link {
+    font-size: 8px;
+  }
+  /* line 276, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .social-networks {
+    width: 100%;
+    justify-content: center;
+  }
+  /* line 279, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .download {
+    width: 100%;
+    justify-content: center;
+  }
+  /* line 283, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .download-link img {
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 287, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav {
+    width: 100vw;
+  }
+  /* line 289, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu {
+    width: 70vw;
+  }
+  /* line 291, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .nav .menu-btn {
+    right: 15px;
+  }
+  /* line 293, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader {
+    width: 100vw;
+    padding: 8px 0 0 0;
+  }
+  /* line 296, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .logo {
+    width: 100%;
+    margin-top: 7px;
+  }
+  /* line 299, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .phone-xs {
+    font-size: 9px;
+    padding-right: 10px;
+  }
+  /* line 302, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .btn {
+    font-size: 9px;
+    width: 90px;
+    transform: translateX(-21%);
+    padding: 3px 3px;
+  }
+  /* line 307, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .subheader .btn:hover {
+    font-size: 9px;
+  }
+  /* line 310, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-heading {
+    font-size: 30px;
+    width: 90%;
+  }
+  /* line 313, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .promo-subheading {
+    font-size: 20px;
+    width: 80%;
+  }
+  /* line 317, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities .card {
+    width: 285px;
+  }
+  /* line 320, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities .choice .car {
+    margin-bottom: 30px;
+  }
+  /* line 322, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .opportunities .choice .down-subtitle-xs {
+    font-size: 18px;
+  }
+  /* line 325, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .title {
+    font-size: 20px;
+  }
+  /* line 327, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition {
+    width: 100%;
+  }
+  /* line 329, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-heading-blue {
+    width: 100%;
+  }
+  /* line 331, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-text-wrapper {
+    width: 100%;
+  }
+  /* line 333, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .conditions .condition-text-blue {
+    width: 100%;
+  }
+  /* line 336, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .cities .subtitle {
+    margin-bottom: 150px;
+  }
+  /* line 341, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu .main-menu-link {
+    font-size: 8px;
+  }
+  /* line 344, C:/Users/sasa2/OneDrive/Рабочий стол/Uber project/src/sass/_adaptive.sass */
+  .footer-inner .footer-menu .submenu-link {
+    font-size: 7px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
